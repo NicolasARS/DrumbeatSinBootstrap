@@ -31,6 +31,11 @@ html, body {
     font-family:Arial, Helvetica, sans-serif;   
 }
 
+header{
+    width: 1000px;
+    margin: 0 auto;
+}
+
 /*Logo*/
 
 #logo{
@@ -41,6 +46,9 @@ html, body {
 
 /*Menu Header*/
 #menuHeader{
+    display: block;
+    text-align: right;
+    position: relative;
     width: 450px;
     display: block;
     float: right;
@@ -48,52 +56,46 @@ html, body {
 
 /*Menu login*/
 
-#menuLogin{
-    display: block;
-    text-align: right;
+.menuLogin{
     margin-top: 10px;
     padding-bottom: -15px;
-    position: relative;
     font-size: smaller;
 }
 
-#menuLogin li{
+.menuLogin li{
     list-style: none;
     display: inline;
 }
 
-#menuLogin ul{
+.menuLogin ul{
     margin-bottom: -5px;
 }
 
-#menuLogin a{
+.menuLogin a{
     color:black;
     margin: 5px;
 }
 
-#menuLogin a:link, a:visited, a:active{
+.menuLogin a:link, a:visited, a:active{
     text-decoration: none;
 }
 
 /*Menu Header*/
 
-#menu{
-    display: block;
+.menu{
     padding-top: 50px;
-    text-align: right;
-    position: relative;
 }
 
-#menu li{
+.menu li{
     list-style: none;
     display: inline;
 }
 
-#menu ul{
+.menu ul{
     margin-top: -5px;
 }
 
-#menu a{
+.menu a{
     background-color: #f2f2f2;
     padding: 5px;
     margin: 5px;
@@ -102,7 +104,7 @@ html, body {
     font-size: 12pt;
 }
 
-#menu a:link, a:visited, a:active{
+.menu a:link, a:visited, a:active{
     text-decoration: none;
 }
 
@@ -154,7 +156,7 @@ html, body {
 
 /*Menu Idioma*/
 
-#navIdioma{
+.navIdioma{
     clear: both;
     padding: 0px;
     margin-left: 140px;
@@ -163,23 +165,23 @@ html, body {
     text-align: right;
 }
 
-#navIdioma nav{
+.navIdioma nav{
     display: block;
     padding-top: 10px;
     margin: 0 auto;
 }
 
-#navIdioma ul{
+.navIdioma ul{
     margin-top: -5px;
 }
 
-#navIdioma li{
+.navIdioma li{
     font-size: smaller;
     list-style: none;
     display: inline;
 }
 
-#navIdioma a{
+.navIdioma a{
     background-color: rgb(216, 216, 216);
     padding: 3px;
     padding-left: 5px;
@@ -191,7 +193,7 @@ html, body {
     border-color:  rgb(156, 152, 152);
 }
 
-#navIdioma a:link, a:visited, a:active{
+.navIdioma a:link, a:visited, a:active{
     text-decoration: none;
 }
 
@@ -214,8 +216,12 @@ hr{
 
 /*Contenido Principal*/
 
-#mainContent{
+main{
     width: 1000px;
+}
+
+.resaltar {
+    color:#2b9f9f;
 }
 
 #content{
@@ -228,7 +234,7 @@ hr{
     display: block;
 }
 
-.aside{
+aside{
     width: 370px;
     float: left;
 }
@@ -461,7 +467,7 @@ hr{
     margin-left: 15px;
 }
 
-#imgLi{
+.imgLi{
     width: 50px;
     height: 50px;
     float: left;
@@ -495,7 +501,7 @@ hr{
 
 /* Footer */
 
-.footer{
+footer{
     color: white;
     display: block;
     background-color:#7a7771;
@@ -503,13 +509,13 @@ hr{
     width: 100%;
 }
 
-.footer::after {
+footer::after {
     content: "";
     display: table;
     clear: both;
 }
 
-.footer p{
+footer p{
     margin-left: 40px;
     margin-top: -25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
